@@ -54,6 +54,10 @@ article {
   max-width: 50rem;
 }
 
+article > a {
+  text-decoration: underline;
+}
+
 p {
   margin-top: 0.5rem;
 }

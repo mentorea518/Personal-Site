@@ -54,7 +54,7 @@ article {
   max-width: 50rem;
 }
 
-article > a {
+li > a {
   text-decoration: underline;
 }
 

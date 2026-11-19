@@ -57,3 +57,8 @@ article {
 p {
   margin-top: 0.5rem;
 }
+
+img {
+  max-width: 70%;
+  max-height: 70%;
+}

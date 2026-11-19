@@ -2,6 +2,7 @@ const pageTitle = document.querySelector("#title");
 const dmButton = document.querySelector("#dmbutton");
 const navText = document.querySelectorAll("#navlink");
 const textContent = document.querySelector("article");
+const listText = document.querySelectorAll("li");
 
 var nextBgColor = "black";
 var nextTitleColor = "darkorchid";
@@ -10,6 +11,7 @@ var nextButtonColor = "white";
 var nextButtonTextColor = "black";
 var nextBorderColor = "0.1rem solid white";
 var nextBodyTextColor = "white";
+var nextListTextColor = "white";
 
 dmButton.addEventListener("click", function() {
   toggleBgColor();
@@ -19,6 +21,7 @@ dmButton.addEventListener("click", function() {
   toggleButtonTextColor();
   toggleBorderColor();
   toggleBodyTextColor();
+  toggleListTextColor();
 });
 
 function toggleBgColor() {
@@ -90,5 +93,17 @@ function toggleBodyTextColor() {
   }
   else {
     nextBodyTextColor = "white";
+  }
+}
+
+function toggleListTextColor() {
+  for (i = 0; i < listText.length; i++) {
+    listText[i].style.color = nextListTextColor;
+  }
+  if (nextListTextColor == "white") {
+    nextListTextColor = "black";
+  }
+  else {
+    nextListTextColor = "white";
   }
 }

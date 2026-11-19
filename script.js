@@ -1,8 +1,8 @@
 const pageTitle = document.querySelector("#title");
 const dmButton = document.querySelector("#dmbutton");
-const navText = document.querySelectorAll("#navlink");
+const navText = document.querySelectorAll(".navlink");
 const textContent = document.querySelector("article");
-const listText = document.querySelectorAll("#listlink");
+const listText = document.querySelectorAll(".listlink");
 
 var nextBgColor = "black";
 var nextTitleColor = "darkorchid";
